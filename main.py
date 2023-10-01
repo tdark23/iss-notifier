@@ -24,6 +24,9 @@ def is_iss_close(lat, long, iss_lat, iss_long):
 
 # Function to check if it's currently dark at your location
 def is_dark(local_sunrise, local_sunset, current_time):
+    # returns true if it's the day
+    # return local_sunrise <= current_time < local_sunset
+    # returns true if it's night
     return not (local_sunrise <= current_time < local_sunset)
 
 
